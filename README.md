@@ -1,10 +1,11 @@
 # WPFStampante
-un programma in wpf app che emula una stampante e le sue funzioni principali
+un programma in wpf app che emula una stampante e le sue funzioni principali usando <br>
+due classi di nome "stampante" e "pagina" il tutto ricoperto da una interfaccia grafica <br>
+sviluppata in XAML
 
-
-## il programma usa due classi principali
+# il programma usa due classi principali
 ecco una piccola descrizione con i costruttutori
-### stampante
+## Stampante
 qui sotto gli attributi e il costruttore base leggermente modificato
 ~~~C#
 public enum colore
@@ -74,7 +75,7 @@ public void SostituisciColore(colore c)
 
 }   
 ~~~
-### pagina
+## Pagina
 
 qui sotto gli attributi
 ~~~C#
