@@ -6,14 +6,30 @@ using System.Threading.Tasks;
 
 namespace kevin.semprini._4i.Stampante.Models
 {
-    internal class Pagina
+    public class Pagina
     {
         private int _ciano;
         private int _magenta;
         private int _yellow;
         private int _black;
 
-        public int CostoC { get => _ciano; set => _ciano = value; }
+        public int CostoC 
+        {
+            get
+            {
+                return _ciano;
+            }
+            set
+            {
+                if (value < 3) 
+                {
+                    throw new ArgumentException("caca pupu");
+                } else
+                {
+                    CostoC = value;
+                }
+            } 
+        }
         public int CostoM { get => _magenta; set => _magenta = value; }
         public int CostoY { get => _yellow; set => _yellow = value; }
         public int CostoB { get => _black; set => _black = value; }
@@ -29,15 +45,19 @@ namespace kevin.semprini._4i.Stampante.Models
                 CostoY = coloreY;
                 CostoM = coloreM;
             }
+            else
+            {
+                throw new Exception();
+            }
         }
 
         public Pagina()
         {
             Random rnd = new Random();
-            CostoB = rnd.Next(0, 10);
-            CostoY = rnd.Next(0, 10);
-            CostoM = rnd.Next(0, 10);
-            CostoC = rnd.Next(0, 10);
+            CostoB = rnd.Next(0, 5);
+            CostoY = rnd.Next(0, 5);
+            CostoM = rnd.Next(0, 5);
+            CostoC = rnd.Next(0, 5);
         }
 
 
