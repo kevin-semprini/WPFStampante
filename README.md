@@ -6,7 +6,7 @@ sviluppata in XAML
 # il programma usa due classi principali
 ecco una piccola descrizione con i costruttutori
 ## Stampante
-qui sotto gli attributi e il costruttore base leggermente modificato
+qui sotto gli attributi e il costruttore base leggermente modificato, la stampante deve prendere i dati da un file .csv e riportare sempre lì le modifiche fatte ai contenitori di colore in modo da rendere la stampante perpetua ed evitare l'azzeramento dei progressi al rilancio del programma
 ~~~C#
 public enum colore
 {
